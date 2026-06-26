@@ -17,7 +17,7 @@ jobs:
   qualite:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/checkout@v6
+      - uses: actions/checkout@v6
       - name: Lint des articles Markdown
         run: npx markdownlint-cli2 "content/**/*.md"
         
